@@ -1,6 +1,6 @@
 # swapi-documentation
 
-This template should help get you started developing with Vue 3 in Vite.
+This project is to display data from Star Wars API. You can see the repo [here](https://github.com/Boamorte8/swapi-documentation)
 
 ## Recommended IDE Setup
 
