@@ -45,8 +45,8 @@ const onClick = (route: string) => {
 </script>
 
 <template>
-  <header class="flex flex-col items-center text-white mb-16">
-    <img alt="Star Wars logo" class="logo" src="@/assets/swlogo.webp" width="300" height="300" />
+  <header class="flex flex-col items-center text-white mb-16 px-4">
+    <img alt="Star Wars logo" src="@/assets/swlogo.webp" width="300" height="300" />
 
     <h1 class="text-4xl mb-7 font-bold">Star Wars Documentation</h1>
 
@@ -56,9 +56,9 @@ const onClick = (route: string) => {
   <main class="flex flex-wrap gap-6 mx-10 justify-center">
     <article v-for="page in pages"
             :key="page.id"
-            class="flex gap-5 cursor-pointer p-4 border rounded-2xl w-80"
+            class="flex gap-4 cursor-pointer p-4 border rounded-2xl w-80"
             @click="onClick(page.link)">
-      <component :is="icons[page.icon]" class="text-white h-7 w-7"></component>
+      <component :is="icons[page.icon]" class="text-white h-7 w-7 mt-1"></component>
       <div class="text-white">
         <h2 class="text-xl mb-4 font-medium">{{ page.title }}</h2>
         <p>{{ page.description }}</p>

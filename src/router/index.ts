@@ -15,6 +15,12 @@ const router = createRouter({
       component: () => import('../views/PlanetsView.vue')
     },
     {
+      path: '/planet/:name',
+      name: 'planet',
+      component: () => import('../views/PlanetView.vue'),
+      props: true,
+    },
+    {
       path: '/questions',
       name: 'questions',
       component: () => import('../views/QuestionsView.vue')
