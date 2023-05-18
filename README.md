@@ -2,6 +2,8 @@
 
 This project is to display data from Star Wars API. You can see the repo [here](https://github.com/Boamorte8/swapi-documentation)
 
+And you can find app working on [this link](https://swapi-wiki-boa.netlify.app)
+
 ## Recommended IDE Setup
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
