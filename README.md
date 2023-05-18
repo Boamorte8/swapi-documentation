@@ -25,6 +25,8 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
+This project works on Node 18 version
+
 ```sh
 npm install
 ```
