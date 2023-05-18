@@ -2,6 +2,7 @@
 import { RouterLink } from 'vue-router';
 
 import AppHeader from '@/components/AppHeader.vue';
+import PlanetsFilters from '@/components/PlanetsFilters.vue';
 import { usePlanetStore } from '@/stores/planet';
 
 const planetStore = usePlanetStore();
@@ -21,9 +22,7 @@ planetStore.getPlanets();
       <BaseSpinner />
     </section>
     <template v-else>
-      <section class="mb-6">
-        Filters
-      </section>
+      <PlanetsFilters />
 
       <section class="flex flex-wrap gap-4 justify-center mb-7">
         <RouterLink v-for="{ name } in planetStore.filteredPlanets"
