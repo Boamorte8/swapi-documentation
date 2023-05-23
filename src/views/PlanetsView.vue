@@ -13,7 +13,7 @@ planetStore.getPlanets();
 <template>
   <AppHeader />
 
-  <BaseLayout>
+  <BaseLayout class="pb-10">
     <BackButton to="/" />
 
     <h1 class="font-bold text-2xl text-center mb-6 text-yellow-500">Planets</h1>

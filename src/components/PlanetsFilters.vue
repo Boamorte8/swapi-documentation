@@ -6,7 +6,7 @@ const planetStore = usePlanetStore();
 </script>
 
 <template>
-  <section class="flex justify-center gap-6 p-2 mb-10">
+  <section class="flex justify-center flex-wrap gap-6 p-2 mb-10">
     <div class="flex flex-col">
       <label for="search" class="mb-2 text-yellow-500">Search by name</label>
       <input type="text"
