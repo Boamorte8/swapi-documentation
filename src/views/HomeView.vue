@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router';
 
-import PlanetIcon from '../components/icons/IconPlanet.vue'
-import QuestionIcon from '../components/icons/IconQuestion.vue'
+import FilmIcon from '@/components/icons/IconFilm.vue'
+import PlanetIcon from '@/components/icons/IconPlanet.vue'
+import QuestionIcon from '@/components/icons/IconQuestion.vue'
 
 const icons = {
+  film: FilmIcon,
   planet: PlanetIcon,
   question: QuestionIcon,
 };
@@ -22,6 +24,13 @@ interface IPage {
 const pages: IPage[] = [
   {
     id: 1,
+    icon: 'film',
+    title: 'Films',
+    description: 'All information about Star Wars films',
+    link: '/films',
+  },
+  {
+    id: 2,
     icon: 'planet',
     title: 'Planets',
     description: 'All information about Star Wars planets',
