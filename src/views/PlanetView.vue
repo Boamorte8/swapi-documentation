@@ -11,7 +11,8 @@ const planet = planetStore.getPlanet(props.name);
 
 <template>
   <AppHeader />
-  <main class="text-white max-w-5xl mx-auto px-5">
+
+  <BaseLayout>
     <BackButton to="/planets" />
 
     <h1 class="font-bold text-2xl text-center mb-6 text-yellow-500">Planet: {{ name }}</h1>
@@ -35,7 +36,7 @@ const planet = planetStore.getPlanet(props.name);
       <dt>Rotation period</dt>
       <dd>{{ planet?.rotation_period }}</dd>
     </dl>
-  </main>
+  </BaseLayout>
 </template>
 
 <style scoped>

@@ -53,7 +53,7 @@ const onClick = (route: string) => {
     <p class="text-lg">In this page you will find information about Star Wars</p>
   </header>
 
-  <main class="flex flex-wrap gap-6 mx-10 justify-center">
+  <main class="flex flex-wrap gap-6 mx-10 justify-center mb-10">
     <article v-for="page in pages"
             :key="page.id"
             class="flex gap-4 cursor-pointer p-4 border rounded-2xl w-80"
@@ -65,4 +65,6 @@ const onClick = (route: string) => {
       </div>
     </article>
   </main>
+
+  <footer class="text-white text-center">Made by <a href="https://boamorte.dev" target="_blank" rel="noopener" class="text-yellow-600">Esteban Salazar Zapata</a></footer>
 </template>

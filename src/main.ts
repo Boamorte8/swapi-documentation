@@ -5,6 +5,7 @@ import { createApp } from 'vue'
 
 import App from './App.vue'
 import BackButton from './components/BackButton.vue'
+import BaseLayout from './components/BaseLayout.vue'
 import BaseSpinner from './components/BaseSpinner.vue'
 import router from './router'
 
@@ -14,6 +15,7 @@ app.use(createPinia())
 app.use(router)
 
 app.component('BackButton', BackButton)
+app.component('BaseLayout', BaseLayout)
 app.component('BaseSpinner', BaseSpinner)
 
 app.mount('#app')

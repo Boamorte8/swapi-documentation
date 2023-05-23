@@ -13,7 +13,7 @@ planetStore.getPlanets();
 <template>
   <AppHeader />
 
-  <main class="text-white max-w-5xl mx-auto px-5">
+  <BaseLayout>
     <BackButton to="/" />
 
     <h1 class="font-bold text-2xl text-center mb-6 text-yellow-500">Planets</h1>
@@ -39,5 +39,5 @@ planetStore.getPlanets();
         </button>
       </section>
     </template>
-  </main>
+  </BaseLayout>
 </template>
