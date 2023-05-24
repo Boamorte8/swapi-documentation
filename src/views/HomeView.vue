@@ -1,52 +1,9 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router';
 
-import FilmIcon from '@/components/icons/IconFilm.vue'
-import PlanetIcon from '@/components/icons/IconPlanet.vue'
-import QuestionIcon from '@/components/icons/IconQuestion.vue'
-
-const icons = {
-  film: FilmIcon,
-  planet: PlanetIcon,
-  question: QuestionIcon,
-};
-
-type IconType = keyof typeof icons;
-
-interface IPage {
-  id: number;
-  icon: IconType;
-  title: string;
-  description: string;
-  link: string;
-}
-
-const pages: IPage[] = [
-  {
-    id: 1,
-    icon: 'film',
-    title: 'Films',
-    description: 'All information about Star Wars films',
-    link: '/films',
-  },
-  {
-    id: 2,
-    icon: 'planet',
-    title: 'Planets',
-    description: 'All information about Star Wars planets',
-    link: '/planets',
-  },
-  {
-    id: 0,
-    icon: 'question',
-    title: 'Questions',
-    description: 'Answers to questions',
-    link: '/questions',
-  },
-];
+import { icons, pages } from '@/utils/page';
 
 const router = useRouter();
-
 
 const onClick = (route: string) => {
   router.push(route);
@@ -75,5 +32,7 @@ const onClick = (route: string) => {
     </article>
   </main>
 
-  <footer class="text-white text-center">Made by <a href="https://boamorte.dev" target="_blank" rel="noopener" class="text-yellow-600">Esteban Salazar Zapata</a></footer>
+  <footer class="text-white text-center">
+    Made by <a href="https://boamorte.dev" target="_blank" rel="noopener" class="text-yellow-600">Esteban Salazar Zapata</a>
+  </footer>
 </template>
